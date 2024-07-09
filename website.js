@@ -28,27 +28,27 @@ const url = require('url'),
 
 
  app.get('/', (req, res) => {
-		res.sendFile(__dirname + '/web/index.html')
+		res.sendFile(__dirname + '/index.html')
 	})
 	app.get('/tos', (req, res) => {
-		res.sendFile(__dirname + '/web/terms.html')
+		res.sendFile(__dirname + '/terms.html')
 	})
 	app.get('/policy', (req, res) => {
-		res.sendFile(__dirname + '/web/privacy.html')
+		res.sendFile(__dirname + '/privacy.html')
 	})
 	app.get('/commands', (req, res) => {
-		res.sendFile(__dirname + '/web/commands.html')
+		res.sendFile(__dirname + '/commands.html')
 	})
 	app.get('/premium', (req, res) => {
-		res.sendFile(__dirname + '/web/premium.html')
+		res.sendFile(__dirname + '/premium.html')
 	})
 	app.get('/faq', (req, res) => {
-		res.sendFile(__dirname + '/web/faq.html')
+		res.sendFile(__dirname + '/faq.html')
 	})
 
 
   app.use(function(req, res) {
-    res.status(404).sendFile(__dirname + '/web/404.html')
+    res.status(404).sendFile(__dirname + '/404.html')
   });
     app.listen(80, null, null, () =>
     console.log(`[INFO]: The Website is ready on port 80`)
