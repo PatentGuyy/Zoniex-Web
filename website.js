@@ -43,7 +43,7 @@ const url = require('url'),
 		res.sendFile(__dirname + '/premium.html')
 	})
 	app.get('/faq', (req, res) => {
-		res.sendFile(__dirname + '/faq')
+		res.sendFile(__dirname + '/faq.html')
 	})
 
 
